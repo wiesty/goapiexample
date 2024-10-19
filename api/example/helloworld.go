@@ -1,9 +1,10 @@
 package example
 
 import (
+    "fmt"
     "net/http"
 )
 
 func HelloWorld(w http.ResponseWriter, r *http.Request) {
-    w.Write([]byte("Hello from Go!"))
+    fmt.Fprintf(w, "Hello, World!")
 }

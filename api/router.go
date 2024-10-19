@@ -1,15 +1,11 @@
 package api
 
 import (
-    "github.com/gorilla/mux"
+    "net/http"
     "EAB/api/example"
 )
 
-func SetupRouter() *mux.Router {
-    router := mux.NewRouter()
-
+func SetupRouter() {
     // Example Route
-    router.HandleFunc("/api/example", example.HelloWorld).Methods("GET")
-
-    return router
+    http.HandleFunc("/api/example", example.HelloWorld)
 }

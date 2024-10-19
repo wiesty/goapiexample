@@ -1,16 +1,10 @@
-
 # Go API Example
 
-This project is a simple example of a Go API using the [Gorilla Mux](https://github.com/gorilla/mux) router package.
+This project is a simple example of a Go API using Go's built-in `net/http` package for routing, starting from Go 1.16.
 
 ## Requirements
 
 - Go 1.16 or higher
-- Gorilla Mux: This package is used for routing and can be installed using the following command:
-
-  ``
-  go get -u github.com/gorilla/mux
-``
 
 ### Project Structure
 
